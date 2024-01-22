@@ -27,7 +27,7 @@ buttonValue.forEach((e) => {
             billInput.style.border='';
             error.classList.replace('d-block','d-none');
             error1.classList.replace('d-block','d-none');
-        }, 2000);
+        }, 2500);
        }else{
         outPutTipAmount.innerHTML=tipAmount(tipCalculate(billValue,match[1]),numberOfPeople).toFixed(2);
         outPutTotal.innerHTML=calculateTotal(tipAmount(tipCalculate(billValue,match[1]),numberOfPeople),billValue,numberOfPeople).toFixed(2);

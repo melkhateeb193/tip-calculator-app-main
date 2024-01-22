@@ -28,10 +28,13 @@ body{
     background-color: var(--Very-dark-cyan);
     border-radius: 10px;
     padding: 30px;
+    width: 50%;
 }
 .billCalculatorContainer{
     background-color: var(--White);
     border-radius: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 .Bill{
     color: var(--Very-dark-cyan);
@@ -50,7 +53,7 @@ color: var(--Light-Grayish-cyan);
     margin: 0 0 10px 0 ;
     font-size: 1rem;
 }
-#buttonP {
+.buttonValue {
     background-color: var(--Very-dark-cyan);
     color: white;
     border: none;
@@ -95,5 +98,23 @@ color: var(--Light-Grayish-cyan);
     font-size: 14px;
     color: red;
 }
+
+
+@media (max-width: 768px) {
+    .billCalculatorContainer {
+      flex-direction: column;
+    }
+
+    .calculator, .calculatorOutBut {
+      width: 100%;
+      margin-right: 0;
+    }
+body {
+    padding: 20px;
+}
+.calculatorOutBut{
+    margin: 10px 0 !important;
+}
+  }
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
